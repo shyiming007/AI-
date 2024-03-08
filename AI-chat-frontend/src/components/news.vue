@@ -14,7 +14,7 @@ function getNewList() {
     baseURL: 'apis', // 新的基础URL
   });
   return new Promise((resolve, reject) => {
-    customAxios.get('/news/get?channel=头条&start=0&num=10&appkey=6532af8b02315960')
+    customAxios.get('/news/get?channel=头条&start=0&num=10&appkey=yourkey')
         .then(res => {
           resolve(res);
           console.log(res.data.result.list[0]);
